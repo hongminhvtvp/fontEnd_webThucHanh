@@ -1,0 +1,84 @@
+/*.slide{
+	display: flex;
+	justify-content: center;
+}*/
+
+*{
+	padding: 0;
+	margin:0;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+.container{
+	width: 1520px;
+	display: flex;
+	height: 92px;
+	justify-content: space-between;
+	background-color: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 0;
+	padding-bottom: 0; 
+}
+.container .hd_logo{
+	width: auto;
+	position: relative;
+}
+.hd_logo_c{
+	
+	opacity: 0.8;
+	background-color:red;
+	
+
+}
+/**/
+#sltim ,#slsp{
+	text-decoration-style: none;
+	background-color: red;
+	height: 14px;
+	width: 50px;
+	color: #fff;
+	font-size: 6px;
+	border-radius: 40%;
+}
+
+.container .hd_menu{
+	padding: 0;
+	margin:0;
+	height:100%;
+	text-align: center;
+}
+
+.container .hd_menu li{
+	display: inline;
+	padding: 8px 16px;
+	line-height: 30px;
+	list-style-type: none;
+}
+.container .hd_menu li:first-child{
+	color: #ff5555;
+}
+.container .hd_menu li a{
+	text-decoration: none;
+}
+.container .hd_hanhdong .hd_hd_hd li{
+	display: inline;
+		padding: 8px 16px;
+
+}
+.container .hd_hanhdong .hd_hd_hd li a{
+	text-decoration: none;
+}
+.container .hd_hanhdong .hd_hd_hd{
+		padding: 0;
+	margin:0;
+}
+
+
+/*Main-css*/
+.main{
+	background-color: #f5f5f5;
+	width: 1460px;
+	height: 600px;
+	border: 1px solid black;
+}
