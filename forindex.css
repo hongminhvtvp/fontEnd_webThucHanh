@@ -1,7 +1,3 @@
-/*.slide{
-	display: flex;
-	justify-content: center;
-}*/
 
 *{
 	padding: 0;
@@ -9,76 +5,141 @@
 	overflow: hidden;
 	font-family: sans-serif;
 }
+/*css cho cac element trong the header*/
 .container{
 	width: 1520px;
 	display: flex;
 	height: 92px;
 	justify-content: space-between;
 	background-color: #fff;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 0;
-	padding-bottom: 0; 
+	padding: 0 30px 0 30px;
+	align-items: center;
 }
+/*image*/
 .container .hd_logo{
-	width: auto;
-	position: relative;
+	
+
+	flex-basis: 120px;
+
+
 }
 .hd_logo_c{
 	
 	opacity: 0.8;
-	background-color:red;
+	
 	
 
 }
-/**/
+.container .hd_logo .hd_logo_c{
+	width: 100%;
+	height: 100%;
+}
+
 #sltim ,#slsp{
 	text-decoration-style: none;
 	background-color: red;
-	height: 14px;
-	width: 50px;
-	color: #fff;
-	font-size: 6px;
-	border-radius: 40%;
+	height:40px;
+	width: 40px;
+	color: #fdbf70;
+	font-size: 10px;
+	border-radius: 10px;
 }
+/*css -menu*/
 
 .container .hd_menu{
 	padding: 0;
 	margin:0;
 	height:100%;
-	text-align: center;
+	flex-grow: 2;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
 }
 
-.container .hd_menu li{
-	display: inline;
+.container .hd_menu > li{
+	
 	padding: 8px 16px;
 	line-height: 30px;
 	list-style-type: none;
 }
-.container .hd_menu li:first-child{
-	color: #ff5555;
-}
-.container .hd_menu li a{
+
+
+.container .hd_menu li > a{
 	text-decoration: none;
+	text-transform: uppercase;
+	font-family:  Montserrat,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+	font-weight: 800px;
+	font-size: 15px;
+	color: #333;
+	position: relative;
 }
-.container .hd_hanhdong .hd_hd_hd li{
-	display: inline;
-		padding: 8px 16px;
+.container .hd_menu > li:first-child a{
+	color: #f55;
+}
+
+.container .hd_menu li > a:before{
+	content: "";
+	width: 0;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #888;
+	display: inline-block;
+	transition: all 0.3s ease;
 
 }
-.container .hd_hanhdong .hd_hd_hd li a{
+.container .hd_menu li:hover a{
+	color: #f55;
+
+
+}
+.container .hd_menu > li:hover a:before{
+	width: 100%;
+	height: 2px;
+	background-color: #888;
+	
+	position: absolute;
+	left: 0%;
+	top:95%;
+	bottom: 0%;
+	transition: background-color 0.3s ease 0 ;
+
+}
+
+.container .hd_menu > li:nth-child(2),li:nth-child(4) a:after{
+	display: inline-block;
+	font-size: 8px;
+}
+/*css -chuc nang*/
+.container .hd_hanhdong .hd_hd_hd > li{
+	
+	padding: 8px 8px;
+
+}
+.container .hd_hanhdong .hd_hd_hd > li > a{
 	text-decoration: none;
 }
 .container .hd_hanhdong .hd_hd_hd{
-		padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
 	margin:0;
+	flex-grow: 1;
+
+}
+.container .hd_hanhdong .hd_hd_hd{
+	
 }
 
 
-/*Main-css*/
+/*css cho cac Element trong class Main-css*/
 .main{
 	background-color: #f5f5f5;
 	width: 1460px;
 	height: 600px;
-	border: 1px solid black;
+	
 }
